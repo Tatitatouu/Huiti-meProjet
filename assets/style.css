@@ -58,16 +58,16 @@ body {
 }
 
 .picture::before {
-	content: ' ';
-	width: 374px;
-	height: 329px;
-	bottom: 0;
-	z-index: -1;
-	background-color: #e5975f;
-	position: absolute;
-  }
-  .picture.left::before { left: 0; }
-  .picture.right::before { right: 0; background-color: #beb45a; }
+  content: ' ';
+  width: 374px;
+  height: 329px;
+  bottom: 0;
+  z-index: -1;
+  background-color: #e5975f;
+  position: absolute;
+}
+.picture.left::before { left: 0; }
+.picture.right::before { right: 0; background-color: #beb45a; }
 
 .picture img {
 	width: 100%;
