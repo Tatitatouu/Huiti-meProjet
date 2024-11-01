@@ -2,6 +2,12 @@ body {
 	max-width: 1920px;
 	margin: auto;
 }
+
+@font-face {
+	font-family: 'Inter';
+	src: url('https://fonts.googleapis.com/css2?family=YourFont');
+	font-display: swap;
+}
 * {
 	font-family: 'Inter';
 	font-style: normal;
@@ -40,6 +46,7 @@ body {
 
 .social-link img {
 	width: 20px;
+	height: 20px;
 }
 
 #about, #contact, #services, .item-column { position: relative; }
