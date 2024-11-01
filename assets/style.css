@@ -2,12 +2,6 @@ body {
 	max-width: 1920px;
 	margin: auto;
 }
-
-@font-face {
-	font-family: 'Inter';
-	src: url('https://fonts.googleapis.com/css2?family=YourFont');
-	font-display: swap;
-}
 * {
 	font-family: 'Inter';
 	font-style: normal;
@@ -99,9 +93,6 @@ body {
 #about-me p {
 	width: 80%;
 	font-size: 14px;
-}
-
-#gallery {
 }
 .title{
 	text-align: center;
