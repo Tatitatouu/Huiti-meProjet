@@ -42,9 +42,9 @@
   };
   $.fn.mauGallery.defaults = {
     columns: 3,
-    lightBox: true,
+    lightBox: false,
     lightboxId: null,
-    showTags: true,
+    showTags: false,
     tagsPosition: "bottom",
     navigation: true
   };
