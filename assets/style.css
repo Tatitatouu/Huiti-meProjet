@@ -6,6 +6,8 @@ body {
 	font-family: 'Inter';
 	font-display: swap;
 	font-style: normal;
+	margin: 0;
+	padding: 0;
 }
 .top-header {
 	background-color: white;
