@@ -13,3 +13,7 @@ $(document).ready(function() {
         tagsPosition: 'top'
     });
 });
+
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/service-worker.js");
+  }
