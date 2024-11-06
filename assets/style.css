@@ -1,6 +1,5 @@
 * {
 	font-family: 'Inter';
-	font-display: swap;
 	font-style: normal;
 	margin: 0;
 	padding: 0;
@@ -42,18 +41,8 @@
 	height: 20px;
 }
 
-#about, #contact, #services, .item-column { position: relative; }
-
-#about {
-	display: flex;
-	background-color: #F6D2B8;
-	padding-inline: 100px;
-	padding-block: 100px;
-}
-
 .picture {
 	flex: 1;
-	margin: 0 20px;
 	z-index: 0;
 }
 
@@ -70,29 +59,57 @@
 .picture.right::before { right: 0; background-color: #beb45a; }
 
 .picture img {
-	aspect-ratio: 374 / 379;
-	width: 100%;
-    height: auto;
+	width: 440px;
+    height: 440px;
+}
+
+#about, #contact, #services, .item-column { position: relative; }
+
+#about {
+	display: flex;
+	background-color: #F6D2B8;
+	padding-inline: 100px;
+	padding-block: 100px;
+	align-items: center;
 }
 #about-me {
-	flex: 2;
-	padding: 20px;
-	background-color: #f9f9f9;
+    flex: 2;
+    padding: 20px;
+    background-color: #f9f9f9;
+    max-width: 800px; /* Limite la largeur pour éviter une expansion trop large */
+    margin: auto; /* Centre la section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
 }
+
 .about-me__title {
-	margin-top: 1em;
-	margin-bottom: 60px;
-	font-size: 30px;
+    margin-top: 1em;
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-align: left;
 }
-.about-me__introduction {
-	font-family: 'Spectral';
-	font-size: 16px;
-	width: 100%;
-	height: auto;
+
+.about-me__introduction, #about-me p {
+    font-family: 'Spectral';
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    max-width: 90%; /* Limite la largeur du texte */
+    margin-bottom: 20px;
 }
-#about-me p {
-	width: 80%;
-	font-size: 14px;
+
+#about-me ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    font-size: 14px;
+    color: #333;
+    max-width: 90%; /* Limite la largeur de la liste */
+}
+
+#about-me li {
+    margin-bottom: 10px;
 }
 .title{
 	text-align: center;
@@ -191,7 +208,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	z-index: 1;
-	
+
 }
 
 #contact {
@@ -261,6 +278,11 @@ input[type="submit"] {
 	}
 	.picture {
 		width: 60%;
+	}
+
+	.picture img {
+		width: 100%;
+		height: auto;
 	}
 	.picture.left::before {
 		width: 100%;
