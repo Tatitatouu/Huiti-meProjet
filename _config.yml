@@ -1,18 +1,3 @@
-plugins:
-  - jekyll-seo-tag
-
-defaults:
-  - scope:
-      path: "assets/images"
-    values:
-      image: true
-      
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  startings: []
-
 defaults:
   - scope:
       path: "assets/images"
