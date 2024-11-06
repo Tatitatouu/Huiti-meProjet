@@ -68,7 +68,7 @@
 #about {
 	display: flex;
 	background-color: #F6D2B8;
-	padding-inline: 100px;
+	padding-inline: 200px;
 	padding-block: 100px;
 	align-items: center;
 	gap: 1.5em;
