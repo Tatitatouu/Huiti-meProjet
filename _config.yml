@@ -12,3 +12,27 @@ compress_html:
   comments: all
   endings: all
   startings: []
+
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
