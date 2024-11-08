@@ -124,6 +124,8 @@
 	color: #fff;
 	background-color: #ec9f53;
 	border-radius:0 ;
+	cursor: pointer;
+	border-radius: 10px;
 }
 .nav-pills .nav-link {
 	color: #000
